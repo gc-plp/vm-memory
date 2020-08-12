@@ -98,7 +98,7 @@ impl MmapRegion {
             None,
             size,
             libc::PROT_READ | libc::PROT_WRITE,
-            libc::MAP_ANONYMOUS | libc::MAP_NORESERVE | libc::MAP_PRIVATE,
+            libc::MAP_ANONYMOUS | libc::MAP_NORESERVE | libc::MAP_PRIVATE | libc::MAP_HUGETLB,
         )
     }
 
